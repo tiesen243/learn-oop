@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     static void InTGPascal(int n) {
         int[][] arr = new int[n][n];
@@ -15,6 +17,10 @@ public class App {
     }
 
     public static void main(String[] args) {
-        InTGPascal(7);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of x: ");
+        double x = sc.nextDouble();
+        System.out.println("Sigmoid of " + x + " is: " + utils.sigmoid(x));
+        sc.close();
     }
 }
